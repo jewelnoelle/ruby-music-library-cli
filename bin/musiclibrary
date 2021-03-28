@@ -3,3 +3,51 @@
 require_relative '../config/environment'
 
 MusicLibraryController.new.call
+
+#CLI Methods
+
+    def list_songs
+        #prints all songs in the music library in a numbered list (alphabetized by song name)
+        #is not hard-coded
+    end
+
+    def list_artists
+        #prints all artists in the music library in a numbered list (alphabetized by artist name)
+        #is not hard-coded
+    end
+
+    def list_genres
+        #prints all genres in the music library in a numbered list (alphabetized by genre name)
+        #is not hard-coded
+    end
+
+    def list_songs_by_artist
+        #prompts the user to enter an artist
+        #accepts user input
+        #prints all songs by a particular artist in a numbered list (alphabetized by song name)
+        #does nothing if no matching artist is found
+    end
+
+    def list_songs_by_genre
+        #prompts the user to enter a genre
+        #accepts user input
+        #prints all songs by a particular genre in a numbered list (alphabetized by song name)
+        #does nothing if no matching genre is found
+    end
+
+    def play_song
+        #prompts the user to choose a song from the alphabetized list output by #list_songs
+        #accepts user input
+        #upon receiving valid input 'plays' the matching song from the alphabetized list output by #list_songs
+        #does not 'puts' anything out if a matching song is not found
+        #checks that the user entered a number between 1 and the total number of songs in the library
+    end
+
+#CLI Commands
+
+'list songs' #- triggers #list_songs
+'list artists' #- triggers #list_artists
+'list genres' #- triggers #list_genres
+'list artist' #- triggers #list_songs_by_artist
+'list genre' #- triggers #list_songs_by_genre
+'play song' #- triggers #play_song
